@@ -1,4 +1,4 @@
-#Exercise 89: Convert an Integer to Its Ordinal Number
+# Exercise 89: Convert an Integer to Its Ordinal Number
 
 """
 Words like first, second and third are referred to as ordinal numbers. In this exercise,
@@ -11,24 +11,27 @@ to 12 and its ordinal number. Your main program should only run when your file h
 not been imported into another program.
 """
 
+
 def intToOrdinal(num):
-  dictionary = {
-      1:"first",
-      2:"second",
-      3:"third",
-      4:"fourth",
-      5:"fifth",
-      6:"sixth",
-      7:"seventh",
-      8:"eightth",
-      9:"nineth",
-      10:"tenth",
-      11:"eleventh",
-      12:"twelveth"
-  }
-  if num in dictionary.keys():
-    return dictionary[num]
-  return ""
+    dictionary = {
+        1: "first",
+        2: "second",
+        3: "third",
+        4: "fourth",
+        5: "fifth",
+        6: "sixth",
+        7: "seventh",
+        8: "eightth",
+        9: "nineth",
+        10: "tenth",
+        11: "eleventh",
+        12: "twelveth"
+    }
+    if num in dictionary.keys():
+        return dictionary[num]
+    return ""
 
 
-print(intToOrdinal(7))
+if __name__ == "__main__":
+    num = int(input())
+    print(intToOrdinal(num))

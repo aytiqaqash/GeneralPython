@@ -36,4 +36,6 @@ def fixCapitalizationIssue(givenString):
     return " ".join(newList)
 
 
-print(fixCapitalizationIssue("what time do i have to be there? what’s the address? this time i’ll try to be on time!"))
+if __name__ == "__main__":
+    sentence = input()
+    fixCapitalizationIssue(sentence)

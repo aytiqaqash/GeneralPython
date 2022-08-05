@@ -20,9 +20,6 @@ def if_integer(string):
         return string.isdigit()
 
 
-def main():
+if __name__ == "__main__":
     userInput = input()
     print(if_integer(userInput))
-
-
-main()

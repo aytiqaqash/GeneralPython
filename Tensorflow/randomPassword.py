@@ -18,4 +18,5 @@ def randomPassword():
     return pss
 
 
-print(randomPassword())
+if __name__ == "__main__":
+    print(randomPassword())

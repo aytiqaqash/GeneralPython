@@ -18,4 +18,6 @@ def numIsPrime(num):
     return True
 
 
-numIsPrime(1)
+if __name__ == "__main__":
+    num = int(input())
+    numIsPrime(num)
