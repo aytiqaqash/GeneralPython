@@ -8,6 +8,20 @@ liste = [1, 2, 3, 4, 5, 6]
 # 1.4 ele funksiya  yazin ki listin icerisindeki cut edelerin ceminden tek ededlerin cemin cixsin
 # 1.5 ele funksiya yazin ki listin icerisindeki cut ededlerin hasilini tek ededlerin hasiline bolsun
 
+def cut_bol_tek(liste):
+    """ 1.5 ele funksiya  yazin ki listin icerisindeki cut ededlerin hasilini tek ededlerin hasiline bolsun """
+    cutHasil, tekHasil = 1, 1
+    for i in liste:
+        if i % 2 == 0:
+            cutHasil *= i
+        else:
+            tekHasil *= i
+
+    if tekHasil == 0:
+        return 0
+    return cutHasil / tekHasil
+
+
 def cut_cix_tek(liste):
     """ 1.4 ele funksiya  yazin ki listin icerisindeki cut edelerin ceminden tek ededlerin cemin cixsin """
     cutSum, tekSum = 0, 0
