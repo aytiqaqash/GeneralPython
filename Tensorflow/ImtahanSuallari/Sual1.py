@@ -8,6 +8,16 @@ liste = [1, 2, 3, 4, 5, 6]
 # 1.4 ele funksiya  yazin ki listin icerisindeki cut edelerin ceminden tek ededlerin cemin cixsin
 # 1.5 ele funksiya yazin ki listin icerisindeki cut ededlerin hasilini tek ededlerin hasiline bolsun
 
+def listiDeyish(liste):
+    """ 1.3 input verildikde listin icine elave ede bilecek,inputda 'remove' yazdiqda ilk indexdexdeki deyeri remove ede bilecek funksiya yazin """
+    x = str(input())
+    print(x)
+    if x == "remove":
+        liste.pop(0)
+    else:
+        liste.append()
+    return liste
+
 def cut_bol_tek(liste):
     """ 1.5 ele funksiya  yazin ki listin icerisindeki cut ededlerin hasilini tek ededlerin hasiline bolsun """
     cutHasil, tekHasil = 1, 1
@@ -50,3 +60,7 @@ def topla(siyahi):
 
 
 print(topla(liste))
+print(hasil(liste))
+print(cut_cix_tek(liste))
+print(cut_bol_tek(liste))
+print(listiDeyish(liste))
